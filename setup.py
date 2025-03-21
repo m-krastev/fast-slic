@@ -397,7 +397,7 @@ setup(
             Extension(
                 "cfast_slic",
                 include_dirs=[np.get_include()],
-                sources=cpp_sources + ["cfast_slic.pyx"],
+                sources=cpp_sources + ["fast_slic/_cython/cfast_slic.pyx"],
                 extra_compile_args=extra_compile_args,
                 extra_link_args=extra_link_args,
                 language="c++",
@@ -405,7 +405,7 @@ setup(
             Extension(
                 "csimple_crf",
                 include_dirs=[np.get_include()],
-                sources=["src/simple-crf.cpp", "csimple_crf.pyx"],
+                sources=["src/simple-crf.cpp", "fast_slic/_cython/csimple_crf.pyx"],
                 extra_compile_args=extra_compile_args,
                 extra_link_args=extra_link_args,
                 language="c++",

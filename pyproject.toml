@@ -28,3 +28,9 @@ requires = [
     "cython",
     "numpy",
 ]
+
+[tool.setuptools.package-data]
+"fast_slic" = ["*.pyx", "*.pxd", "*.cpp", "*.h", "*.hpp"]
+
+[tool.setuptools.exclude-package-data]
+"fast_slic" = ["_cython/cfast_slic.c", "_cython/cfast_slic.cpp", "_cython/csimple_crf.cpp"]
