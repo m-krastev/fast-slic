@@ -173,3 +173,6 @@ prof/
 [._]*.un~
 
 *.dSYM/
+
+.idea
+.vscode

@@ -1,0 +1,30 @@
+[project]
+name = "fast-slic"
+version = "0.4.1"
+description = "Fast Slic Superpixel Implementation"
+requires-python = ">=3.9"
+authors = [
+    { name = "Alchan Kim", email = "a9413miky@gmail.com" }
+]
+license = { text = "MIT" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython"
+]
+dependencies = [
+    "numpy"
+]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools",
+    "wheel",
+    "cython",
+    "numpy",
+]
